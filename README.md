@@ -92,6 +92,7 @@ Create the directory structure.
 
 ## Data being sent to the SQL Database
 
+<img src="https://github.com/sstephensMCSE/burger/blob/main/public/assets/img/database.jpg" width="500" title="database">
 
 
 
