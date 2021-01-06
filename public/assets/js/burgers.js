@@ -27,13 +27,13 @@ $(function() {
     });
   
     // Create new burger
-    $(".create-form").on("submit", function(event) {
+    $(".add-burger").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
       var newBurger = {
-        name: $("#newburger").val().trim(),
-        devoured: 0
+        burger_name: $("#ca").val().trim(),
+        devoured: $("[name=devoured]").val().trim()
       };
   
       // Send the POST request.
