@@ -8,22 +8,29 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
 
-      var id = $(this).data("id");
-      var newDevouredState = {
-        devoured: 1
-      };
-  
-      // Send the PUT request.
-      $.ajax("/api/burgers/" + id, {
-        type: "PUT",
-        data: newDevouredState
-      }).then(
-        function() {
-          console.log("changed devoured to", newDevouredState);
-          // Reload the page to get the updated list
-          location.reload();
-        }
+      console.log($(this).context.id);
+      
+      var id = $(this).context.id;
+      
+      // Add a conditional statement to troubleshoot this issue with THIS.
+      if (id) {
+        var newDevouredState = {
+          devoured: 1
+        };
+    
+        // Send the PUT request.
+        $.ajax("/api/burgers/" + id, {
+          type: "PUT",
+          data: newDevouredState
+        }).then(
+          function() {
+            console.log("changed devoured to", newDevouredState);
+            // Reload the page to get the updated list
+            location.reload();
+          }
+        
       );
+        }
     });
   
     // Create new burger
@@ -51,7 +58,7 @@ $(function() {
   
     // Delete the burger
     $(".delete-burger").on("click", function(event) {
-      var id = $(this).data("id");
+      var id = $(this).context.id;
   
       // Send the DELETE request.
       $.ajax("/api/burgers/" + id, {
