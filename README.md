@@ -1,6 +1,10 @@
 
 # Project Title : Node Express Handlebars
 
+# Project Deployed to Heroku with JawsDB
+<img src="https://github.com/sstephensMCSE/burger/upload/main/public/assets/img/2021-01-12_14-04-10.gif" width="500" title="deployed">
+
+
 This assignment will demonstrate a working, deployed application that uses persistent data. The project will follow the MVC design pattern with Node and MySQL to manage the data interface. I will use Handlebars to generate the HTML.
 
 This will be hosted with Heroku, but this time will need some additional configuration for the hosting the database.
