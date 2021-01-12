@@ -5,7 +5,7 @@
   {{#each burgers}}
     {{#unless devoured}}    
     <li>
-      <button class="btn btn-primary btn-lg eatburger" id={{this.id}} type="submit">{{this.id}} - {{this.burger_name}}</button>      
+      <button class="btn btn-primary btn-lg eatburger" id={{this.id}} type="submit">{{this.burger_name}}</button>      
     </li>    
     {{/unless}}
   {{/each}}
@@ -16,7 +16,7 @@
     {{#each burgers}}
     {{#if devoured}}
         <li>          
-           <button class="btn btn-primary btn-lg delete-burger" id={{this.id}} type="submit">{{this.id}} - {{this.burger_name}}</button>           
+           <button class="btn btn-primary btn-lg delete-burger" id={{this.id}} type="submit">{{this.burger_name}}</button>           
         </li>
     {{/if}}
     {{/each}}
